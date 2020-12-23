@@ -48,11 +48,11 @@ ggplot(data = world) +
   theme_bw() +
   theme(legend.position = "bottom") +
   xlab("Longitude") + ylab("Latitude") +
-  ggtitle("Cost of Big Mac (USD) as a percent of the average Big Mac price in the United States on July 1, 2020", 
-          subtitle =  "Americans traveling abroad will find Big Macs relatively inexpensive except for in Lebanon, Sweden & Switzerland") +
+  ggtitle("Cost of Big Mac (USD) as a percent of the average price in the United States on July 1, 2020", 
+          subtitle =  "Americans abroad will pay less for Big Macs except for in Lebanon, Sweden & Switzerland") +
   labs(caption = "Data from The Economist")
 
 ggsave("C:/RProjects/tidytuesday/2020-52-big_mac_index/big_mac_index.png", 
-       width = 18, height = 12, units = "in", dpi = 300)
+       dpi = 300)
 
 simplified <- big_mac_countries[,c("name_long", "relative_to_usd")]
