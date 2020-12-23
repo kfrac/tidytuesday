@@ -48,9 +48,9 @@ ggplot(data = world) +
   theme_bw() +
   theme(legend.position = "bottom") +
   xlab("Longitude") + ylab("Latitude") +
-  ggtitle("Cost of Big Mac (USD) as a percent of the average price in the United States on July 1, 2020", 
-          subtitle =  "Americans abroad will pay less for Big Macs except for in Lebanon, Sweden & Switzerland") +
-  labs(caption = "Data from The Economist")
+  ggtitle("Cost of Big Mac (USD) as a percent of the average price of the Big Mac in the United States on July 1, 2020", 
+          subtitle =  "Americans travelling abroad will pay less for Big Macs almost everywhere except for in Lebanon, Sweden & Switzerland") +
+  labs(caption = "Data from The Economist\nVisualization by Kevin Frac")
 
 ggsave("C:/RProjects/tidytuesday/2020-52-big_mac_index/big_mac_index.png", 
        dpi = 300)
