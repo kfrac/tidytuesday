@@ -1,1 +1,1 @@
-# tidytuesday contributions
+# Visualizations of #tidytuesday challenges
